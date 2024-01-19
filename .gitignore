@@ -4,3 +4,4 @@ Makefile
 extconf.h
 *.bundle
 *.o
+*.so

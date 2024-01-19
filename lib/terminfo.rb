@@ -29,6 +29,7 @@
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 require 'terminfo.so'
+require 'terminfo/version'
 
 class TermInfo
   def TermInfo.default_object

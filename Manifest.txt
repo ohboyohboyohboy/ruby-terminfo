@@ -1,0 +1,13 @@
+lib/terminfo.rb
+lib/terminfo/version.rb
+ext/terminfo/extconf.rb
+ext/terminfo/terminfo.c
+Gemfile
+ChangeLog
+README.md
+Rakefile
+terminfo-for-ruby-3.gemspec
+test/test_winsize.rb
+sample/fill
+sample/resize
+Manifest.txt

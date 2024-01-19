@@ -1,18 +1,19 @@
-# ruby-terminfo - terminfo bindings for Ruby
+= terminfo-for-ruby-3 - terminfo bindings for Ruby
 
-ruby-terminfo provides terminfo bindings for Ruby
+terminfo-for-ruby-3 :: http://www.a-k-r.org/ruby-terminfo/
 
 [![Gem Version](https://badge.fury.io/rb/ruby-terminfo.svg)](https://badge.fury.io/rb/ruby-terminfo)
 
-## Author
+== Author
 
-Tanaka Akira <akr@fsij.org>
+Tanaka Akira <akr@fsij.org> (author of original ruby-terminfo project)
+updated for Ruby 3.2 by Kyle Yetter <kyle@ohboyohboyohboy.org>
 
-## Home Page
+== Home Page
 
 http://www.a-k-r.org/ruby-terminfo/
 
-## Features
+== Features
 
 * Easy to use methods
   * `control` (combination of `tigetstr`/`tparm`/`tputs`)
@@ -27,9 +28,9 @@ http://www.a-k-r.org/ruby-terminfo/
 * `ctermid` to avoid hardcoding /dev/tty
 * `wcswidth` to measure a string width in number of columns
 
-## Usage
+== Usage
 
-### Easy to use methods
+=== Easy to use methods
 ```ruby
 require 'terminfo'
 
@@ -37,7 +38,7 @@ TermInfo.control("cuf", 7)    # cursor forward 7 columns
 p TermInfo.screen_size        # use TIOCGWINSZ, LINES/COLUMNS env. or terminfo lines#/cols#
 ```
 
-### Low level methods
+=== Low level methods
 ```ruby
 require 'terminfo'
 
@@ -46,17 +47,17 @@ print t.tputs(t.tparm(t.tigetstr("cuf"), 7), 1)  # cursor forward 7 columns
 p TermInfo.tiocgwinsz(STDOUT)                    # use TIOCGWINSZ
 ```
 
-## Requirements
+== Requirements
 
 * Ruby : http://www.ruby-lang.org/
 
-## Download
+== Download
 
 * Latest release: http://www.a-k-r.org/ruby-terminfo/ruby-terminfo-0.2.tar.gz
 
 * Development version: http://github.com/akr/ruby-terminfo
 
-## Install
+== Install
 
 ```shell
 ruby extconf.rb
@@ -64,12 +65,12 @@ make
 make install
 ```
 
-## Reference Manual
+== Reference Manual
 
 See rdoc/TermInfo.html or
 http://www.a-k-r.org/ruby-terminfo/rdoc/TermInfo.html
 
-## License
+== License
 
 
 Redistribution and use in source and binary forms, with or without
