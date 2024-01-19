@@ -406,7 +406,7 @@ Init_terminfo()
   putfunc_output = Qnil;
   rb_global_variable(&putfunc_output);
 
-  cTermInfo = rb_define_class("TermInfo", rb_cData);
+  cTermInfo = rb_define_class("TermInfo", rb_cObject);
   eTermInfoError = rb_define_class_under(cTermInfo, "TermInfoError", rb_eRuntimeError);
 
   rb_define_alloc_func(cTermInfo, rt_alloc);
